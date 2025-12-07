@@ -1,34 +1,29 @@
-# JARVIS-Voice-Assistant-System
+# 🧠 JARVIS – Voice Assistant System (Python)
 
-JARVIS is a Python-based voice assistant that can interact with the user through speech recognition, perform tasks like opening applications, searching on Google or Wikipedia, playing music randomly, telling jokes, and having small talk.
+JARVIS is a Python-based desktop voice assistant that listens to voice commands, performs system tasks, retrieves information, manages notes, opens applications, and communicates through speech—providing a hands-free assistant experience inspired by Iron Man’s JARVIS.
 
-This project uses speech recognition and text-to-speech (TTS) to provide a hands-free assistant experience similar to Iron Man's JARVIS.
+It uses Speech Recognition and Text-to-Speech (TTS) to interact naturally with users while running locally on your system.
 
+---
 
-## 🛠 Features
+## ✨ Features
 
-- Greet the user according to the time of day (morning, afternoon, evening)
+- **Time-based greeting** (morning, afternoon, evening)
+- **Voice command recognition** powered by Google Speech Recognition  
+- **Text-to-speech responses** using `pyttsx3`
+- **Time announcements**
+- **Wikipedia search** with spoken summaries
+- **Open websites:** Google, Facebook, YouTube, GitHub, LinkedIn
+- **YouTube voice search**
+- **Open system apps:** Calculator, Notepad, CMD
+- **Open Google Calendar**
+- **Jokes and small talk**
+- **Local Notes System**
+  - “Take a note…” → saves to `notes.txt`
+  - “Show my notes” → reads notes aloud
+- **Graceful exit** via voice command
 
-- Recognize voice commands using Google Speech Recognition
-
-- Speak responses using pyttsx3
-
-- Time & Date announcements
-
-- Wikipedia search with spoken summary
-
-- Open websites like Google, Facebook, YouTube
-
-- Play random music from a specified folder
-
-- Open system applications: Calculator, Notepad, CMD
-
-- Open Calendar (Google Calendar via browser)
-
-- Tell jokes and respond to basic small talk
-
-- Exit gracefully with a voice command
-
+---
 
 
 ## 💻 Requirements 
@@ -61,13 +56,6 @@ This project uses speech recognition and text-to-speech (TTS) to provide a hands
    ```bash
    python jarvis.py
    ```
-
-
-## 👨‍💻 Author
-
-**Boktiar Ahmed Bappy**
-
-Inspired by Tony Stark's JARVIS
 
 
 ### 📜 License
