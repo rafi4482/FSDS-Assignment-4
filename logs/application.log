@@ -44,3 +44,7 @@
 [ 2025-12-07 00:25:42,235 ] root - INFO - 
 [ 2025-12-07 00:25:53,665 ] root - INFO - 
 [ 2025-12-07 00:26:06,443 ] root - INFO - User exited the program.
+[ 2025-12-08 04:29:10,365 ] comtypes.client._code_cache - INFO - Imported existing <module 'comtypes.gen' from 'F:\\Anaconda\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+[ 2025-12-08 04:29:10,365 ] comtypes.client._code_cache - INFO - Using writeable comtypes cache directory: 'F:\Anaconda\Lib\site-packages\comtypes\gen'
+[ 2025-12-08 04:29:35,723 ] root - INFO - 
+[ 2025-12-08 04:29:47,476 ] root - INFO - User exited the program.

@@ -97,6 +97,16 @@ def gemini_model_response(user_input):
     response = model.generate_content(prompt)
     return response.text
 
+def save_note(text):
+    with open("notes.txt", "a", encoding="utf-8") as f:
+        f.write(text + "\n")
+
+def read_notes():
+    if not os.path.exists("notes.txt"):
+        return "You have no saved notes."
+    with open("notes.txt", "r", encoding="utf-8") as f:
+        return f.read()
+
 greeting()
 
 while True:
@@ -182,7 +192,6 @@ while True:
         webbrowser.open("github.com")
         logging.info("User requested to open GitHub.")
 
-
     
     # Jokes
     elif "joke" in query:
@@ -208,6 +217,21 @@ while True:
         speak("Thank you for your time sir. Have a great day ahead!")
         logging.info("User exited the program.")
         exit()
+    
+    elif "take a note" in query or "make a note" in query:
+        note = query.replace("take a note", "").replace("make a note", "").strip()
+        if note == "":
+            speak("What should I write down?")
+            note = takeCommand().lower()
+        save_note(note)
+        speak("I have saved your note.")
+
+    elif "show my notes" in query or "read my notes" in query:
+        notes = read_notes()
+        speak("Here are your notes.")
+        speak(notes)
+        print(notes)
+
 
     else:
         response = gemini_model_response(query)
